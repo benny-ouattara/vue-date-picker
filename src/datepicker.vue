@@ -157,7 +157,7 @@
             value: { type: String, default: '' },
             format: { type: String, default: 'YYYY-MM-DD' },
             name: { type: String, default: '' },
-            styleObj: { type: Object, default: {}}
+            styleObj: { type: Object, default: function() { return {} } }
         },
         data () {
             return {
